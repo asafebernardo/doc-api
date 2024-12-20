@@ -1,10 +1,12 @@
         /* Estilos para a seção Left */
         .left {
-            flex: 0.5; /* Ocupa 1 parte proporcional do layout */
-            background-color: #2c2c2c;
+            width: auto;
+            height: auto;
+            background-color: #101619;
             display: flex;
             flex-direction: column; /* Organiza os botões e conteúdo verticalmente */
             padding: 1px;
+            border-right: 1px solid rgb(61, 61, 61);
         }
 
         .tab-buttons {
@@ -14,26 +16,28 @@
 
         .tab-button {
             flex: 1; /* Todos os botões têm o mesmo tamanho */
-            background-color: #202020;
+            background-color: #101619;
             border: 2px solid transparent; /* Borda transparente, o foco é a cor de fundo */
             padding: 5px;
             cursor: pointer;
             text-align: center;
             font-size: 15px;
             transition: background-color 0.3s, border-color 0.3s;
-            border-top: 1px solid #535353;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
             margin: 0px 5px; /* Adiciona uma margem de 5px à esquerda e à direita dos botões */
         }
 
         .tab-button.active {
-            background-color: #007BFF;
+            background-color: #202c31;
             color: rgb(255, 0, 0);
         }
 
         .tab-content-container {
             flex: 1; /* Preenche o espaço restante */
-            overflow-y: auto; /* Permite rolagem se necessário */
-            background-color: #202020;
+            overflow-y: auto;
+            overflow-x: hidden; /* Permite rolagem se necessário */
+            background-color: #202c31;
         }
 
         .tab-content {
@@ -46,7 +50,7 @@
 
         /* Imagem Logo*/
         .logo{
-            width: 70%;
+            width: 185px;
             height: auto;
             margin: 30px;
         }
@@ -58,51 +62,64 @@
         /* Estilo do botão de expandir/minimizar */
         .expandable-button, .expandable-button2 {
             width: 100%;
-            padding: 10px;
+            padding: 5px;
             text-align: left;
-            background-color: #202020;
+            background-color: #202c31;
             color: white;
             border: none;
             cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s;
-            font-family: 'Roboto', sans-serif;
-            margin-top: 5px;
+            font-size: 12px;
             font-weight: bold;
+            transition: background-color 0.3s;
+            font-family: open-sans, arial, "Helvetica Neue";
+            margin-left: 18px;
+            margin-top: 5px;
         }
 
         .expandable-button:hover, .expandable-button2:hover {
-            background-color: #535353;
+            background-color: #293940;
         }
 
         /* Estilo do conteúdo expansível */
         .expandable-content {
             display: none; /* Começa oculto */
             padding: 10px;
-            background-color: #2c2c2c;
+            background-color: #172125;
             transition: max-height 0.3s ease-out;
         }
 
         /* Opções de Cadastros*/
         .clientes, .contratos, .produtos, .fornecedor, .estruturas{
             text-align: left;
-            background-color: #2c2c2c;
+            background-color: #172125;
             color: white;
             border: none;
             cursor: pointer;
             font-size: 14px;
-            font-family: 'Roboto', sans-serif;
+            font-family: open-sans, arial, "Helvetica Neue";
             margin-left: 10px;
         }
 
         .clientes:hover, .contratos:hover, .produtos:hover, .fornecedor:hover, .estruturas:hover{
-            background-color: #535353;
+            background-color: #233136;
             padding: 7px;
             margin-left: 10px;
         }
 
-        .cadastros, .planejamento, .entradas, .saidas, .pagar, .receber, .fiscal, .contabilidade, .folha, .estoque, .provedor{
+        .cadastros, .planejamento, .entradas, .saidas, .pagar, .receber, .fiscal, .contabilidade, .folha, .estoque, .provedor, .hub, .inmap, .suporte, .hotsite, .crm, .frota, .voip, .mvno{
             display: flex;
             flex-direction: column; /* Alinha os botões em uma coluna */
             gap: 7px; /* (opcional) Adiciona espaçamento entre os botões */
+        }
+
+        .doc{
+            width: 100%;
+            height: auto;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-family: open-sans, arial, "Helvetica Neue";
+            margin-top: 1px;
+            margin-bottom: 20px;
+            background-color: #101619;  
         }

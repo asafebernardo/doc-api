@@ -1,12 +1,32 @@
-/* Estilos para a seção Right */
+/* Estilos para a seção Left */
 .right {
-    flex: 1; /* Ocupa 1 parte proporcional do layout */
-    background-color: #1f1f1f;
+    width: 100%;
+    height: auto;
+    background-color: #5a5a5a;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    text-align: center;
+    padding: 1px;
 }
 
+.right-top{
+    display: flex;
+    flex-direction: column;
+    background-color: #e4cdcd;
+    width: 200px;
+    height: 100px;
+}
+
+.right-campos{
+    display: flex;
+    flex-direction: column;
+    background-color: #666666;
+    width: 200px;
+    height: 100px;
+}
+
+.right-metodos{
+    display: flex;
+    flex-direction: column;
+    background-color: #692727;
+    width: 200px;
+    height: 100px;
+}
