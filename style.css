@@ -1,0 +1,6 @@
+/* Correção básica para layout geral */
+body {
+  display: flex; /* Organiza as seções lado a lado */
+  margin: 0;
+  height: 100vh; /* Altura total da janela */
+}

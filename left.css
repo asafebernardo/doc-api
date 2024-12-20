@@ -1,0 +1,108 @@
+        /* Estilos para a seção Left */
+        .left {
+            flex: 0.5; /* Ocupa 1 parte proporcional do layout */
+            background-color: #2c2c2c;
+            display: flex;
+            flex-direction: column; /* Organiza os botões e conteúdo verticalmente */
+            padding: 1px;
+        }
+
+        .tab-buttons {
+            display: flex;
+            border: 1px;
+        }
+
+        .tab-button {
+            flex: 1; /* Todos os botões têm o mesmo tamanho */
+            background-color: #202020;
+            border: 2px solid transparent; /* Borda transparente, o foco é a cor de fundo */
+            padding: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 15px;
+            transition: background-color 0.3s, border-color 0.3s;
+            border-top: 1px solid #535353;
+            margin: 0px 5px; /* Adiciona uma margem de 5px à esquerda e à direita dos botões */
+        }
+
+        .tab-button.active {
+            background-color: #007BFF;
+            color: rgb(255, 0, 0);
+        }
+
+        .tab-content-container {
+            flex: 1; /* Preenche o espaço restante */
+            overflow-y: auto; /* Permite rolagem se necessário */
+            background-color: #202020;
+        }
+
+        .tab-content {
+            display: none; /* Esconde todas as abas por padrão */
+        }
+
+        .tab-content.active {
+            display: block; /* Mostra somente a aba ativa */
+        }
+
+        /* Imagem Logo*/
+        .logo{
+            width: 70%;
+            height: auto;
+            margin: 30px;
+        }
+
+        /*----------------------------------------------*/
+        /* Expansores*/
+        /* Estilo básico para o container */
+
+        /* Estilo do botão de expandir/minimizar */
+        .expandable-button, .expandable-button2 {
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            background-color: #202020;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .expandable-button:hover, .expandable-button2:hover {
+            background-color: #535353;
+        }
+
+        /* Estilo do conteúdo expansível */
+        .expandable-content {
+            display: none; /* Começa oculto */
+            padding: 10px;
+            background-color: #2c2c2c;
+            transition: max-height 0.3s ease-out;
+        }
+
+        /* Opções de Cadastros*/
+        .clientes, .contratos, .produtos, .fornecedor, .estruturas{
+            text-align: left;
+            background-color: #2c2c2c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 10px;
+        }
+
+        .clientes:hover, .contratos:hover, .produtos:hover, .fornecedor:hover, .estruturas:hover{
+            background-color: #535353;
+            padding: 7px;
+            margin-left: 10px;
+        }
+
+        .cadastros, .planejamento, .entradas, .saidas, .pagar, .receber, .fiscal, .contabilidade, .folha, .estoque, .provedor{
+            display: flex;
+            flex-direction: column; /* Alinha os botões em uma coluna */
+            gap: 7px; /* (opcional) Adiciona espaçamento entre os botões */
+        }

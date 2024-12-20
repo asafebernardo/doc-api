@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon-ixc.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="middle.css">
+    <link rel="stylesheet" href="right.css">
+    <script src="script.js"></script>
+    <script src="left.js"></script>
+</head>
+
+<body>
+    <!-- Seção Esquerda com Abas -->
+    <div class="left">
+        
+        <img src="ixc-logo.png" class="logo">
+        
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab('tab1')">🖥️</button>
+            <button class="tab-button" onclick="openTab('tab2')">📑</button>
+            <button class="tab-button" onclick="openTab('tab3')">⚙️</button>
+            <button class="tab-button" onclick="openTab('tab4')">🗂️</button>
+        </div>
+
+        <div class="tab-content-container">
+            <div id="tab1" class="tab-content active">
+                <div class="aba1">
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('cadastros')">Cadastros</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="cadastros" class="expandable-content"> 
+                            <div class="cadastros">
+                                <button class="clientes">Clientes</button>
+                                <button class="contratos">Contratos</button>
+                                <button class="produtos">Produtos</button>
+                                <button class="fornecedor">Fornecedor</button>
+                                <button class="estruturas">Estruturas</button>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('planejamento')">Planejamento</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="planejamento" class="expandable-content"> 
+                            <div class="planejamento">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('entradas')">Entradas</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="entradas" class="expandable-content"> 
+                            <div class="entradas">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('saidas')">Saídas</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="saidas" class="expandable-content"> 
+                            <div class="saidas">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('pagar')">Pagar</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="pagar" class="expandable-content"> 
+                            <div class="pagar">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('receber')">Receber</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="receber" class="expandable-content"> 
+                            <div class="receber">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('fiscal')">Fiscal</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="fiscal" class="expandable-content"> 
+                            <div class="fiscal">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('contabilidade')">Contabilidade</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="contabilidade" class="expandable-content"> 
+                            <div class="contabilidade">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('folha')">Folha de Pagamento</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="folha" class="expandable-content"> 
+                            <div class="folha">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('estoque')">Estoque</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="estoque" class="expandable-content"> 
+                            <div class="estoque">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <!-- Botão para expandir ou ocultar -->
+                        <button class="expandable-button" onclick="toggleExpandable('provedor')">Provedor</button>
+                
+                        <!-- Conteúdo expansível -->
+                        <div id="provedor" class="expandable-content"> 
+                            <div class="provedor">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div id="tab2" class="tab-content">
+                <div class="aba2">
+                    <h2>Conteúdo da Aba 2</h2>
+                    <p>Este é o conteúdo da segunda aba.</p>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-content">
+                <div class="aba2">
+                    <h2>Conteúdo da Aba 3</h2>
+                    <p>Este é o conteúdo da terceira aba.</p>
+                </div>
+            </div>
+
+            <div id="tab4" class="tab-content">
+                <div>
+                    <h2>Conteúdo da Aba 4</h2>
+                    <p>Este é o conteúdo da quarta aba.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Central -->
+    <div class="middle">
+        <h1>Canto 2</h1>
+    </div>
+
+    <!-- Seção Direita -->
+    <div class="right">
+        <h1>Canto 3</h1>
+    </div>
+</body>
+</html>

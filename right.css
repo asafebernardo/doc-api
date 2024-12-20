@@ -1,0 +1,12 @@
+/* Estilos para a seção Right */
+.right {
+    flex: 1; /* Ocupa 1 parte proporcional do layout */
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
