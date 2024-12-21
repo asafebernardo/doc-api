@@ -1,0 +1,42 @@
+/* Topo da lateral direita */
+.right-top {
+    background-color: #263237;
+    height: 140px;
+    text-align: center;
+    flex: 0 1 auto; /* Não permite que cresça, ocupa o necessário */
+  }
+
+.doc-api{
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+}
+
+.aba_cliente{
+    background-color: #314249; /* Fundo da aba */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    width: 80px;
+    height: 40px;
+    margin-top: 80px;
+    border: 0px solid #444; /* Borda do botão */
+    border-top-left-radius: 10px; /* Bordas arredondadas */
+    border-top-right-radius: 10px;
+    text-align: center; /* Centraliza o texto */
+    align-items: center;
+    align-content: center;
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Efeitos suaves */
+}
+
+.aba_cliente:active{
+    background-color: #1b272c; /* Fundo da aba */
+    color: rgb(255, 255, 255); /* Cor do texto */
+}
+
+.aba_cliente:hover{
+    background-color: #344951; /* Fundo da aba */
+    color: rgb(255, 255, 255); /* Cor do texto */    
+}

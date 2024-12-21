@@ -1,0 +1,199 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: flex-start;  /* Ajuste a posição da lateral esquerda na parte superior */
+  height: 100vh;
+  overflow: hidden; /* Para evitar rolagem indesejada */
+}
+
+/* Fundo da Tela */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 7fr; /* Largura da lateral esquerda e direita */
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  gap: 0px; /* Remove o espaço entre as colunas */
+  margin: 0px; /* Remove a margem do contêiner */
+}
+
+/* Lateral esquerda */
+.left {
+  flex-direction: column; /* Organiza os itens de forma vertical */
+  background-color: #101619;
+  width: 250px;
+  display: flex;
+  margin: 0px;
+  border: 0px;
+}
+
+.fundo{
+  background-color: #212c31; /* Fundo da aba */
+  width: 100%;
+  height: 700px;
+  cursor: default; /* Cursor de ponteiro ao passar o mouse */ 
+}
+
+/* Lateral direita */
+.right {
+  display: flex;
+  flex-direction: column; /* Empilha o topo e a parte de baixo */
+  width: 100%;
+  height: 100vh; /* Ocupa a altura total da tela */
+  margin: 0; /* Remove margens da lateral direita */
+}
+
+/* Parte de baixo da lateral direita */
+.right-bottom {
+  display: flex;
+}
+
+/* Logo do IXC - Provedor */
+.ixc-logo {  
+  margin: 10px;
+  align-content: center;
+  width: 80%; /* Ocupa toda a largura disponível */
+  height: auto; /* Mantém a altura proporcional à largura */
+  max-height: 100px; /* Limita a altura máxima, conforme a altura do topo */
+  object-fit: contain; /* Ajusta a imagem dentro do contêiner sem distorção */
+  display: block; /* Garante que a imagem se comporta como um bloco */
+}
+
+/* Abas */
+.left-abas {
+  margin-top: 10px;
+}
+
+/* Estilo para as abas */
+.aba {
+  background-color: #212c31; /* Fundo da aba */
+  color: none; /* Cor do texto */
+  width: 20%;
+  height: 28px;
+  padding: 1px;
+  margin-left: 6px;
+  margin-right: 3px;
+  border: 0px solid #444; /* Borda do botão */
+  border-top-left-radius: 10px; /* Bordas arredondadas */
+  border-top-right-radius: 10px;
+  text-align: center; /* Centraliza o texto */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s, transform 0.2s; /* Efeitos suaves */
+}
+
+/* Efeito de hover */
+.aba:hover {
+  background-color: #3b4a51; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Efeito de clique */
+.aba:active {
+  background-color: #1a2327; /* Cor de fundo no clique */
+}
+
+.aba-container {
+  background-color: none;
+  display: none;
+}
+
+.aba-container.active {
+  display: block;
+}
+
+.expandable-button {
+  background-color: #212c31; /* Fundo da aba */
+  border: 0px solid #444; /* Borda do botão */
+  width: 100%;
+  color: #ffffff;
+  height: 34px;
+  text-align: left;
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s, transform 0.2s; /* Efeitos suaves */
+}
+
+.expandable-button:hover {
+  width: 100%;
+  background-color: #2a3940; /* Muda a cor de fundo ao passar o mouse */
+}
+
+.btn_interno:hover {
+  width: 100%;
+  background-color: #233137; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Conteúdo expansível */
+.expandable-content {
+  width: 100%;
+  border: 0px solid #444; /* Borda do botão */
+  color: #ffffff;
+  max-height: 0; /* Inicialmente oculto */
+  text-align: center; /* Centraliza o texto */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  overflow: hidden; /* Impede que o conteúdo transborde */
+}
+
+.expandable-content.active {
+  max-height: 100%; /* Limite para a altura quando ativo (ajuste conforme necessário) */
+}
+
+/* Textos internos e externos */
+.txt_externo {
+  margin-left: 24px;
+  font-family: var(--alias-body-text-font-family);
+  font-size: var(--alias-font-size-default);
+  font-style: serif;
+}
+
+.txt_interno {
+  margin-left: 24px;
+  font-family: var(--alias-body-text-font-family);
+  font-size: 12px;
+  font-style: serif;
+}
+
+.txt_interno::before {
+  content: "•"; /* Adiciona o ponto */
+  margin-right: 7px; /* Espaçamento entre o ponto e o texto */
+  color: #ffffff; /* Cor do ponto */
+  font-size: 18px; /* Tamanho do ponto */
+}
+
+/* Botão interno */
+.btn_interno {
+  background-color: #182125; /* Fundo da aba */
+  border: 0px solid #444; /* Borda do botão */
+  width: 100%;
+  color: #ffffff;
+  height: 30px;
+  text-align: left; /* Centraliza o texto */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.btn_interno_folder {
+  background-color: #182125; /* Fundo da aba */
+  border: 0px solid #444; /* Borda do botão */
+  width: 100%;
+  color: #ffffff;
+  height: 30px;
+  text-align: left; /* Centraliza o texto */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.txt_interno_folder::before {
+  margin-left: 24px;
+  content: "📁"; /* Adiciona o ponto */
+  margin-right: 7px; /* Espaçamento entre o ponto e o texto */
+  color: #ffffff; /* Cor do ponto */
+  font-size: 12px; /* Tamanho do ponto */
+}
+
+.btn_interno.open::before {
+  content: "📂"; /* Ícone de pasta aberta */
+}
